@@ -4,9 +4,10 @@ fn main() {
     let a = 100;
     let b = a;
     // copy trait
-
-
-    let s1 = "Hello World".to_string();
+    
+    let s1 = "Hello World".to_string(); // heap
+    let s3 = "Hello World"; // .rodata 
+    
     let s2 = s1;
 
 
