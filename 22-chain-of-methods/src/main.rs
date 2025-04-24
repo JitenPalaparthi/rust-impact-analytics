@@ -6,6 +6,11 @@ fn main() {
     println!("d:{d}");
     let d=  Calc::new(10).add(20).add(10).get();
     println!("d:{d}");
+
+    let b1 = Box::new(10);
+
+    let b2 = b1;
+
 }
 
 trait TCalc{
@@ -46,3 +51,4 @@ impl TCalc for Calc{
         self.data
     }
 }
+
